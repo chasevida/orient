@@ -1,0 +1,42 @@
+{
+  "name": "orient",
+  "version": "0.0.1",
+  "description": "A Github label labeller. It's a cli tool for creating and updating Github issue label names and colours.",
+  "main": "index",
+  "engines": {
+    "node": ">=0.10.30"
+  },
+  "dependencies": {
+    "cli-color": "0.3.x",
+    "octonode": "0.6.x",
+    "q": "1.0.x",
+    "yargs": "1.3.x"
+  },
+  "devDependencies": {
+    "lab": "4.0.x",
+    "rewire": "2.1.0",
+    "sinon": "1.10.3"
+  },
+  "bin": {
+    "orient": "./bin/orient"
+  },
+  "scripts": {
+   "test": "make test-cov"
+  },
+  "author": "Mark C.",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chasevida/orient.git"
+  },
+  "keywords": [
+    "orient",
+    "cli",
+    "github",
+    "github labels"
+  ],
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/chasevida/orient/issues"
+  }
+}

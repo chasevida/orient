@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Orient</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <style>
+
+            .labels li {
+                padding: 3px 0;
+            }
+
+            .btn.btn-default {
+                color: #ffffff;
+                font-weight: bold;
+                border: none;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <h1>Orient:</h1>
+            <ol class="labels js-labels"></ol>
+        </div>
+
+        <script>
+
+            var $el = $('.js-labels');
+            
+            var formatLabels = function(labels) {
+
+                $.each(labels, function(i, label) {
+
+                    var style = 'background:#' + label.color;
+
+                    var rgb = parseInt(label.color, 16);
+                    var r = (rgb >> 16) & 0xff
+                    var g = (rgb >>  8) & 0xff;
+                    var b = (rgb >>  0) & 0xff;
+
+                    var luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+
+                    // 0 - 255
+                    if (luma > 127) {
+                        style += ';color:#000';
+                    }
+
+                    var el  = document.createElement('li'),
+                        btn = document.createElement('button');
+
+                    el.appendChild(btn);
+                    btn.innerHTML = label.name;
+                    btn.type      = 'button';
+                    btn.className = 'btn btn-default btn-xs';
+                    btn.style.cssText = style;
+
+                    $el.append(el);
+                })
+
+            };
+
+            $.ajax({
+                url: 'labels.json',
+                success: formatLabels
+            });
+        </script>
+    </body>
+</html>
