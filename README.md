@@ -5,6 +5,8 @@
 
 **Please Note:** Your Github credentials are not stored anywhere by this tool and are only passed to Github in order to authorise calls to their api.
 
+[![Build Status](https://travis-ci.org/chasevida/orient.svg)](https://travis-ci.org/chasevida/orient)
+
 ## Command Line
 **Orient** requires the following flag options be passed along:
 
