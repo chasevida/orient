@@ -1,6 +1,6 @@
 #Orient
 
-**Orient** is a Github label labeller. It's a cli tool for creating and updating Github issue label names and colours. Create a json list of issue labels and their respective colours and pass it along with your Github creds to **Orient** to see it do it's thin.
+**Orient** is a Github label labeller. It's a cli tool for creating and updating Github issue label names and colours. Create a json list of issue labels and their respective colours and pass it along with your Github creds to **Orient** to see it do it's thing.
 
 
 **Please Note:** Your Github credentials are not stored anywhere by this tool and are only passed to Github in order to authorise calls to their api.
