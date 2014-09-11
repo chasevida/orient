@@ -24,5 +24,3 @@ Use it straight from the command line:
 	$ orient -f labels.json -u myusername -p mypassword -r username/reponame
 	
 	
-## TODO
-This is still in early development and I've just broken a significant amount of tests that need refactoring. Some of the tests are a bit vague and need more attention too. But it is working.
