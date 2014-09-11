@@ -35,8 +35,8 @@ describe('Create', function() {
 
         args = { 
             _: [],
-            f:          'labels.json',
-            file:       'labels.json',
+            f:          'test/fixtures/labels.json',
+            file:       'test/fixtures/labels.json',
             u:          'myusername',
             username:   'myusername',
             p:          'mypassword',
@@ -108,18 +108,18 @@ describe('Create', function() {
 
     it('create should load json labels', function(done) {
 
-        var spy = sinon.spy(orient, 'getLabelFile');
+        var stub = sinon.stub(orient, 'getLabelFile').returns({});
 
         var githubStub = {
             createLabels: function() {}
         };
 
         var github = orient.__set__('github', githubStub);
-
+        
         orient.create(args);
 
-        expect(orient.getLabelFile.callCount).to.equal(1);
-        expect(spy.calledWith(args.file)).to.be.true;
+        expect(stub.calledOnce).to.be.true;
+        expect(stub.calledWith(args.file)).to.be.true;
 
         orient.getLabelFile.restore();
 

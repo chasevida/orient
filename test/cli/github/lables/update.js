@@ -32,7 +32,7 @@ describe('Github Labels Update', function() {
 
     beforeEach(function(done) {
 
-        labels = [{
+        labels = [null, {
             name: 'Wontfix',
             color: '#efefef'
         }, {
@@ -123,7 +123,7 @@ describe('Github Labels Update', function() {
             name: 'username/repo'
         };
 
-        var result = ghupdate.patchLabel(ghlabelMock, labels[0]);
+        var result = ghupdate.patchLabel(ghlabelMock, labels[1]);
         expect(result).to.be.an('object');
 
         done();
@@ -138,7 +138,7 @@ describe('Github Labels Update', function() {
             name: 'username/repo'
         };
 
-        var result = ghupdate.patchLabel(ghlabelMock, labels[0]);
+        var result = ghupdate.patchLabel(ghlabelMock, labels[1]);
         expect(result).to.be.an('object');
 
         done();
