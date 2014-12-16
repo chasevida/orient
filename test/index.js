@@ -1,6 +1,7 @@
 // Load modules
 
-var Lab         = require('lab');
+var chai        = require('chai'),
+    Lab         = require('lab');
 
 var orient      = require('../lib'),
     lab         = exports.lab = Lab.script();
@@ -12,7 +13,7 @@ var describe    = lab.describe,
     before      = lab.before,
     beforeEach  = lab.beforeEach,
     after       = lab.after,
-    expect      = Lab.expect;
+    expect      = chai.expect;
 
 
 // Tests

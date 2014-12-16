@@ -1,6 +1,7 @@
 // Load modules
 
-var Lab         = require('lab'),
+var chai        = require('chai'),
+    Lab         = require('lab'),
     labels      = require('../fixtures/labels.json'),
     rewire      = require('rewire'),
     sinon       = require('sinon');
@@ -16,7 +17,7 @@ var describe    = lab.describe,
     before      = lab.before,
     beforeEach  = lab.beforeEach,
     after       = lab.after,
-    expect      = Lab.expect;
+    expect      = chai.expect;
 
 
 // Tests

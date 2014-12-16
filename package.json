@@ -9,20 +9,21 @@
   "dependencies": {
     "cli-color": "0.3.x",
     "octonode": "0.6.x",
-    "q": "1.0.x",
+    "q": "1.1.x",
     "yargs": "1.3.x"
   },
   "devDependencies": {
+    "chai": "^1.10.0",
     "coveralls": "2.11.x",
-    "lab": "4.3.x",
-    "rewire": "2.1.0",
-    "sinon": "1.10.3"
+    "lab": "5.1.x",
+    "rewire": "2.1.x",
+    "sinon": "1.12.x"
   },
   "bin": {
     "orient": "./bin/orient"
   },
   "scripts": {
-   "test": "make test-cov"
+    "test": "make test-cov"
   },
   "author": "Mark C.",
   "license": "BSD",
