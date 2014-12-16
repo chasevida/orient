@@ -1,0 +1,77 @@
+[{
+  "name": "Accounts",
+  "color": "000000"
+}, {
+  "name": "Design",
+  "color": "000000"
+}, {
+  "name": "Dev",
+  "color": "000000"
+}, {
+  "name": "Blocker",
+  "color": "bd2c00"
+}, {
+  "name": "Bug",
+  "color": "bd2c00"
+}, {
+  "name": "High Priority",
+  "color": "bd2c00"
+}, {
+  "name": "Dispatch",
+  "color": "159818"
+}, {
+  "name": "Fixed",
+  "color": "159818"
+}, {
+  "name": "Test",
+  "color": "159818"
+}, {
+  "name": "Help Wanted",
+  "color": "E7285B"
+}, {
+  "name": "Needs Votes",
+  "color": "E7285B"
+}, {
+  "name": "Review",
+  "color": "E7285B"
+}, {
+  "name": "Enhancement",
+  "color": "4183c4"
+}, {
+  "name": "Feature",
+  "color": "4183c4"
+}, {
+  "name": "Content",
+  "color": "6c6b6b"
+}, {
+  "name": "UI",
+  "color": "6c6b6b"
+}, {
+  "name": "UX",
+  "color": "6c6b6b"
+}, {
+  "name": "Community",
+  "color": "ff5800"
+}, {
+  "name": "Discussion",
+  "color": "ff5800"
+}, {
+  "name": "Question",
+  "color": "ff5800"
+}, {
+  "name": "Confirmed",
+  "color": "efefef"
+}, {
+  "name": "Duplicate",
+  "color": "efefef"
+}, {
+  "name": "Invalid",
+  "color": "efefef"
+}, {
+  "name": "Low Priority",
+  "color": "efefef"
+}, {
+  "name": "Wontfix",
+  "color": "efefef"
+}]
+
