@@ -1,6 +1,6 @@
 {
   "name": "orient",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A Github label labeller. It's a cli tool for creating and updating Github issue label names and colours.",
   "main": "index",
   "engines": {
